@@ -1,0 +1,53 @@
+####  basic configs
+# dataset:
+#   name: 'Cephalometric'
+#   pth: '/home1/quanquan/datasets/Cephalometric/'
+
+
+# ----------------------  Common Configs  --------------------------
+base:
+  base_dir: "../runs/sam/"
+  tag: ''
+  stage: ''
+logger:
+  mode: ['tb', ]
+#  mode: ''
+  recorder_reduction: 'mean'
+
+training:
+  save_mode: ['all','best', 'latest'] # 
+  batch_size : 8 # 20 for A100
+  num_workers : 16
+  num_epochs : 500  # epochs
+  use_amp: true
+  save_interval : 4
+  val_check_interval: 6
+  load_pretrain_model: false
+
+  # optim:
+  lr: 0.0002
+  decay_step: 2000
+  decay_gamma: 0.8
+  weight_decay: 0.0001
+  alpha: 0.99
+  validation_interval: 100
+
+dataset:
+  types: ['3d'] # ['3d', '2d']
+  split: 'train'
+  data_root_path: '/quanquan/datasets/'
+  dataset_list: ["alp", "word", "debug"] # ['sam', "their", "ours"]
+  data_txt_path: './datasets/dataset_list/'
+  dataset2d_path: "/home1/quanquan/datasets/08_AbdomenCT-1K/"
+  cache_data_path: '/home1/quanquan/datasets/cached_dataset2/'
+
+  # sam_checkpoint: "/quanquan/code/projects/medical-guangdong/segment-anything/sam_vit_b_01ec64.pth" # 103 server
+  # model_type: "vit_b"
+  # Continue training
+  # continue_training: true
+  # load_optimizer: true
+  # breakpoint_path: "/quanquan/code/segment-anything/runs/sam/ddp_b1/lora_3d_2dm"
+
+test:
+  batch_size: 1
+
