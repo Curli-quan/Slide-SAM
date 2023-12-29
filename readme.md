@@ -14,7 +14,7 @@ python -m  datasets.generate_txt
 
 cache 3d data into slices
 ```
-python -m datasets.cache_datasets3d
+python -m datasets.cache_dataset3d
 ```
 
 ## Training
