@@ -1,6 +1,13 @@
 <!-- # Slide-SAM -->
 # Slide-SAM: Medical SAM meets sliding window
 
+We upload the checkpoint recently!
+Please download by 
+
+https://pan.baidu.com/s/1jvJ2W4MK24JdpZLwPqMIfA 
+
+code：7be9 
+
 ## Before Training
 install tutils
 ```
