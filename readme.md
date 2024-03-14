@@ -1,5 +1,3 @@
-<!-- # Slide-SAM -->
-
 # Slide-SAM: Medical SAM meets sliding window
 
 
@@ -38,12 +36,13 @@
     </br>
     <sup>*</sup> Equal Contribution&emsp;
 </div>
-
 [![arXiv](https://img.shields.io/badge/arxiv-2311.10121-b31b1b)](https://arxiv.org/pdf/2311.10121.pdf)
 [![github](https://img.shields.io/badge/github-Slide_SAM-black)](https://github.com/Curli-quan/Slide-SAM)
 <a href="#LICENSE--citation">
   <img alt="License: Apache2.0" src="https://img.shields.io/badge/LICENSE-Apache%202.0-blue.svg"/>
 </a>
+
+
 
 ## TODOs
 
