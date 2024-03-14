@@ -88,7 +88,7 @@ We recommend you to convert the dataset into the nnUNet format.
     ...
 ```
 
-Try to use the function organize in  [nnunet-style]([nnUNet/documentation/dataset_format.md at master · MIC-DKFZ/nnUNet (github.com)](https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/dataset_format.md)) or ```organize_by_names``` to prepare your custom datasets.
+Try to use the function organize in  [nnunet-style](https://github.com/MIC-DKFZ/nnUNet/blob/master/documentation/dataset_format.md) or ```organize_by_names``` to prepare your custom datasets.
 
 Then run :
 
