@@ -61,8 +61,8 @@
 
 |    name     | resolution  |   Prompt    |                           Weights                            |
 | :---------: | :---------: | :---------: | :----------------------------------------------------------: |
-| Slide-SAM-B | 1024 x 1024 | box & point | [ckpt](https://pan.baidu.com/s/1jvJ2W4MK24JdpZLwPqMIfA)   [code:  7be9] |
-| Slide-SAM-H | 1024 x 1024 | box & point | [ckpt](https://pan.baidu.com/s/1jnOwyWd-M1fBIauNi3IA4w)   [code:  05dy] |
+| Slide-SAM-B | 1024 x 1024 | box & point | [Google Drive](https://drive.google.com/file/d/1YJ7deylSXfEwRfOAc72zBJE1xGlxSnp0/view?usp=drive_link) | [Baidu Disk (code:7be9)](https://pan.baidu.com/s/1jvJ2W4MK24JdpZLwPqMIfA) |
+| Slide-SAM-H | 1024 x 1024 | box & point | [Google Drive](https://drive.google.com/file/d/1KnSL5mgAdUDsktvrwcYp_9IJeqfFWhIN/view?usp=drive_link) | [Baidu Disk (code:05dy)](https://pan.baidu.com/s/1jnOwyWd-M1fBIauNi3IA4w) |
 
 
 
