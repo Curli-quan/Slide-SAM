@@ -122,13 +122,17 @@ python -m datasets.cache_dataset3d
 
 ## Start Training
 
-Run training on multi-GPU
+Run training on multi-gpu
 
 ```
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m core.ddp --tag debug
 ```
 
+Run training on single-GPU
 
+```
+CUDA_VISIBLE_DEVICES=0 python -m core.ddp --tag debug
+```
 
 ## Sliding Inference and Test
 
