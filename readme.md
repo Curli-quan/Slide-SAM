@@ -59,7 +59,7 @@
 
 ### Large scale Medical Image Pretrained Weights
 
-|    name     | resolution  |   Prompt    |                           Weights                            |
+|    Name     | Resolution  |   Prompt    |                           Weights                            |
 | :---------: | :---------: | :---------: | :----------------------------------------------------------: |
 | Slide-SAM-B | 1024 x 1024 | box & point | [Google Drive](https://drive.google.com/file/d/1YJ7deylSXfEwRfOAc72zBJE1xGlxSnp0/view?usp=drive_link) \| [Baidu Disk (7be9)](https://pan.baidu.com/s/1jvJ2W4MK24JdpZLwPqMIfA) |
 | Slide-SAM-H | 1024 x 1024 | box & point | [Google Drive](https://drive.google.com/file/d/1KnSL5mgAdUDsktvrwcYp_9IJeqfFWhIN/view?usp=drive_link) \| [Baidu Disk (05dy)](https://pan.baidu.com/s/1jnOwyWd-M1fBIauNi3IA4w) |
@@ -147,11 +147,11 @@ python -m core.volume_predictor
 If the code, paper and weights help your research, please cite:
 
 ```
-@inproceedings{quan2024slide,
+@article{quan2023slide,
   title={Slide-SAM: Medical SAM Meets Sliding Window},
   author={Quan, Quan and Tang, Fenghe and Xu, Zikang and Zhu, Heqin and Zhou, S Kevin},
-  booktitle={Medical Imaging with Deep Learning},
-  year={2024}
+  journal={arXiv preprint arXiv:2311.10121},
+  year={2023}
 }
 ```
 
