@@ -37,7 +37,7 @@
     </br>
     <sup>*</sup> Equal Contribution&emsp;
 </div>
-
+<br>
 
 [![arXiv](https://img.shields.io/badge/arxiv-2311.10121-b31b1b)](https://arxiv.org/pdf/2311.10121.pdf)
 [![github](https://img.shields.io/badge/github-Slide_SAM-black)](https://github.com/Curli-quan/Slide-SAM)
@@ -50,8 +50,8 @@
 
 - [x] Paper released
 - [x] Code released
-- [x] Slide-SAM-B weights
-- [x] Slide-SAM-H weights
+- [x] Slide-SAM-B weights  released
+- [x] Slide-SAM-H weights released
 
 
 
@@ -59,10 +59,10 @@
 
 ### Large scale Medical Image Pretrained Weights
 
-|    name     | resolution |   Prompt    |                           Weights                            |
-| :---------: | :--------: | :---------: | :----------------------------------------------------------: |
-| Slide-SAM-B | 1024x1024  | box & point | [ckpt](https://pan.baidu.com/s/1jvJ2W4MK24JdpZLwPqMIfA)   [code：7be9] |
-| Slide-SAM-H |  224x224   |    78.6     | [ckpt](https://pan.baidu.com/s/1jnOwyWd-M1fBIauNi3IA4w)   [code:  05dy] |
+|    name     | resolution  |   Prompt    |                           Weights                            |
+| :---------: | :---------: | :---------: | :----------------------------------------------------------: |
+| Slide-SAM-B | 1024 x 1024 | box & point | [ckpt](https://pan.baidu.com/s/1jvJ2W4MK24JdpZLwPqMIfA)   [code:  7be9] |
+| Slide-SAM-H | 1024 x 1024 | box & point | [ckpt](https://pan.baidu.com/s/1jnOwyWd-M1fBIauNi3IA4w)   [code:  05dy] |
 
 
 
