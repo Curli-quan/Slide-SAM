@@ -128,7 +128,7 @@ Run training on multi-gpu
 CUDA_VISIBLE_DEVICES=0,1,2,3 python -m core.ddp --tag debug
 ```
 
-Run training on single-GPU
+Run training on single-gpu
 
 ```
 CUDA_VISIBLE_DEVICES=0 python -m core.ddp --tag debug
