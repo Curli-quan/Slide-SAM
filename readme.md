@@ -7,7 +7,6 @@
 </p>
 
 
-
 <div align="center">
     <span class="author-block">
     <a href="https://scholar.google.com/citations?user=mlTXS0YAAAAJ&hl=en" target="_blank">Quan Quan</a><sup>1,2*</sup>,
@@ -24,6 +23,8 @@
     <span class="author-block">
     <a href="https://scholar.google.com/citations?user=8eNm2GMAAAAJ&hl=en" target="_blank">S.Kevin Zhou</a><sup>1,2,3</sup>
     </span>
+</div>
+
 
 <div align="center">
     <sup>1</sup> <a href='http://english.ict.cas.cn/' target='_blank'>Institute of Computing Technology, Chinese Academy of Sciences</a>
@@ -36,11 +37,12 @@
     </br>
     <sup>*</sup> Equal Contribution&emsp;
 </div>
+
+
 [![arXiv](https://img.shields.io/badge/arxiv-2311.10121-b31b1b)](https://arxiv.org/pdf/2311.10121.pdf)
 [![github](https://img.shields.io/badge/github-Slide_SAM-black)](https://github.com/Curli-quan/Slide-SAM)
 <a href="#LICENSE--citation">
-  <img alt="License: Apache2.0" src="https://img.shields.io/badge/LICENSE-Apache%202.0-blue.svg"/>
-</a>
+  <img alt="License: Apache2.0" src="https://img.shields.io/badge/LICENSE-Apache%202.0-blue.svg"/></a>
 
 
 
