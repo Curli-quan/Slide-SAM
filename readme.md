@@ -140,6 +140,12 @@ CUDA_VISIBLE_DEVICES=0 python -m core.ddp --tag debug
 python -m core.volume_predictor
 ```
 
+## Testset Validation
+
+```
+python -m test.volume_eval
+```
+
 
 
 <p align="center" width="100%">
