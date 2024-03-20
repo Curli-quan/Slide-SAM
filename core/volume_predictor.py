@@ -573,7 +573,7 @@ if __name__ == "__main__":
     sam = sam_model_registry[model_type](checkpoint=None)
     learner = SamLearner(sam_model=sam, config=config, data_engine=DataManager(img_size=(1024,1024)))
     learner.use_lora()
-    pth = "/home1/quanquan/code/projects/finetune_large/runs/sam/ddp_b9/lora3/ckpt/model_iter_360000.pth"
+    pth = "model_iter_360000.pth"
     learner.load_well_trained_model(pth)
     learner.cuda()
 

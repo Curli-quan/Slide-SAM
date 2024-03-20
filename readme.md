@@ -118,9 +118,29 @@ Then run
 python -m datasets.cache_dataset3d
 ```
 
+## Configs Settings
+
+important settings
+
+```yaml      
+base:
+  base_dir: "../runs/sam/" # logging dir
+
+dataset:
+  types: ['3d'] # ['3d', '2d']
+  split: 'train'
+  data_root_path: '../datasets/' 
+  dataset_list: ["pancreas"]
+  data_txt_path: './datasets/dataset_list/'
+  dataset2d_path: "../08_AbdomenCT-1K/"
+  cache_data_path: '../cached_dataset2/'
+
+  cache_prefix: ['6016'] # cache prefix of cached dataset for training
+  # For example: ['07',] for 07_WORD
+```
 
 
-## Start Training
+## Start Training from scratch (SAM)
 
 Run training on multi-gpu
 
@@ -141,11 +161,46 @@ python -m core.volume_predictor
 ```
 
 ## Testset Validation
-
+```python
+EX_CONFIG = {       
+        'dataset':{
+            'prompt': 'box', # prompt type: box or point
+            'dataset_list': ['word'], # dataset_list name
+            'label_idx': 2, # label index for inference, 
+        },       
+        "pth": "./model.pth"
+    }
+```
 ```
 python -m test.volume_eval
 ```
 
+## Finetuning (Recommended)
+```yaml      
+training:
+  breakpoint_path: "./model.pth" # pretrained weight path
+```
+
+```
+python -m core.ddp_sub --tag run
+```
+
+## Validation with Finetuned Weights
+
+```
+  python -m test.volume_eval_sublora
+```
+
+```python
+EX_CONFIG = {       
+        'dataset':{
+            'prompt': 'box', # prompt type: box or point
+            'dataset_list': ['word'], # dataset_list name
+            'label_idx': 2, # label index for inference, 
+        },       
+        "pth": "./model_finetuned.pth"
+    }
+```
 
 
 <p align="center" width="100%">
