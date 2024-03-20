@@ -26,9 +26,6 @@ training:
   alpha: 0.99
   validation_interval: 100
 
-  sam_checkpoint: "/home1/quanquan/code/projects/medical-guangdong/segment-anything/sam_vit_b_01ec64.pth" # 103 server
-  model_type: "vit_b"
-
   continue_training: false
   load_optimizer: false
   breakpoint_path: "/home1/quanquan/code/projects/finetune_large/runs/sam/ddp_b9/lora3/ckpt/model_iter_360000.pth"
