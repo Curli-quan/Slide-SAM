@@ -34,7 +34,7 @@ dataset:
   types: ['3d'] # ['3d', '2d']
   split: 'train'
   data_root_path: '/home1/quanquan/datasets/'
-  dataset_list: ["pancreas"]
+  dataset_list: ["example"] # for example_train.txt
   data_txt_path: './datasets/dataset_list/'
   dataset2d_path: "/home1/quanquan/datasets/08_AbdomenCT-1K/"
   cache_data_path: '/home1/quanquan/datasets/cached_dataset2/'

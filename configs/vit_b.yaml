@@ -40,6 +40,8 @@ dataset:
   data_txt_path: './datasets/dataset_list/'
   dataset2d_path: "/home1/quanquan/datasets/08_AbdomenCT-1K/"
   cache_data_path: '/home1/quanquan/datasets/cached_dataset2/'
+  cache_prefix: ['6016'] # '07'
+  specific_label: [2]
 
   # sam_checkpoint: "/quanquan/code/projects/medical-guangdong/segment-anything/sam_vit_b_01ec64.pth" # 103 server
   # model_type: "vit_b"

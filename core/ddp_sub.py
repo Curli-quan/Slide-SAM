@@ -105,7 +105,7 @@ if __name__ == "__main__":
     world_size = n_gpus
     
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", default="./configs/vit_sub_rectum.yaml")
+    parser.add_argument("--config", default="./configs/vit_sub.yaml")
     parser.add_argument("--func", default="train")
     parser.add_argument("--reuse", action="store_true")
 

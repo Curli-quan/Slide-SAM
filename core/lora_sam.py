@@ -33,6 +33,7 @@ class _LoRA_qkv(nn.Module):
         self.linear_a_v = linear_a_v
         self.linear_b_v = linear_b_v
         self.dim = qkv.in_features
+        self.in_features = qkv.in_features
         self.w_identity = torch.eye(qkv.in_features)
 
     def forward(self, x):
