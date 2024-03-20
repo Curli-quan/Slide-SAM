@@ -47,6 +47,16 @@ TEMPLATE={
     "65": np.zeros(200).tolist(),
 }
 
+EX_CONFIG={
+    "dataset":{
+        "split": 'train',
+        "data_root_path": '/home1/quanquan/datasets/',
+        "dataset_list": ["decathlon_colon"],
+        "data_txt_path": './datasets/dataset_list/',
+        "cache_data_path": '/home1/quanquan/datasets/cached_dataset2/',
+        "cache_prefix": ['10'] # '07'
+    }    
+}
 
 class Dataset3D(basic_3d_dataset):
     def __init__(self, config, use_cache=True, *args, **kwargs) -> None:
@@ -101,8 +111,6 @@ class Dataset3D(basic_3d_dataset):
             all_labels = TEMPLATE[dataset_name[:2] + "_" + subname]
         else:
             all_labels = TEMPLATE[dataset_name[:2]]
-
-        all_labels = TEMPLATE[dataset_name[:2]]
 
         num = 0
 
@@ -267,25 +275,29 @@ class Dataset3D(basic_3d_dataset):
             self._convert_one_mask_from_npz_to_jpg(label_path)
 
 
-# EX_CONFIG={
-#     "dataset":{
-#         "split": 'train',
-#         "data_root_path": '/home1/quanquan/datasets/',
-#         "dataset_list": ["decathlon_colon"],
-#         "data_txt_path": './datasets/dataset_list/',
-#         "cache_data_path": '/home1/quanquan/datasets/cached_dataset2/',
-#         "cache_prefix": ['10'] # '07'
-#     }    
-# }
-
 if __name__ == "__main__":
     # def go_cache():
     from tutils.new.manager import ConfigManager
     config  = ConfigManager()
     config.add_config("configs/vit_sub.yaml")
-    # config.add_config(EX_CONFIG)
-    
-    # Caching data
+    config.add_config(EX_CONFIG)
     dataset = Dataset3D(config=config['dataset'], use_cache=False)
     dataset.caching_data()
+    # config.add_config("configs/vit_b_word_103.yaml")
+    # dataset = Dataset3D(config=config['dataset'], use_cache=True)
+    # dataset.caching_data()
     # dataset.convert_masks_types()
+
+    # from tutils.new.manager import ConfigManager
+    # config  = ConfigManager()
+    # config.add_config("configs/vit_b_103.yaml")
+    # dataset = Dataset3D(config=config['dataset']) # , use_cache=True
+    # data = dataset.__getitem__(0)
+
+    # # import ipdb; ipdb.set_trace()
+    # from torch.utils.data import DataLoader
+    # loader = DataLoader(dataset, batch_size=8)
+    # for batch in loader:
+    #     print(batch['img'].shape, batch['label'].shape)
+    #     print(data['label'].max())
+    #     # import ipdb; ipdb.set_trace()
