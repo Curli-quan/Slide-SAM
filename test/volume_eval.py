@@ -141,7 +141,7 @@ if __name__ == "__main__":
             'dataset_list': ['word'], # ["sabs"], chaos, word
             'label_idx': 1,
         },
-        'pth': "model_latest.pth"
+        'pth': "model.pth"
     }
 
     config = ConfigManager()

@@ -262,6 +262,8 @@ if __name__ == "__main__":
     from tutils.new.manager import ConfigManager
     config  = ConfigManager()
     config.add_config("configs/vit_b.yaml")
-    dataset = Dataset3D(config=config['dataset'], use_cache=True)
+    
+    # Caching data
+    dataset = Dataset3D(config=config['dataset'], use_cache=False)
     dataset.caching_data()
     # dataset.convert_masks_types()

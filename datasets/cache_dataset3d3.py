@@ -33,7 +33,7 @@ class Dataset3D(basic_3d_dataset):
             if not os.path.isdir(dirpath):
                 continue
             prefix = dirpath.split("/")[-1]
-            if prefix[:2] in config['cache_prefix']:
+            if prefix.split("_")[0] in config['cache_prefix']:
                 data_paths += glob.glob(dirpath + "/label_jpg/*.jpg")
                 print("Load ", dirpath)
         print('Masks len {}'.format(len(data_paths)))
