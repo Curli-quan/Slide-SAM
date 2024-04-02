@@ -1,0 +1,2 @@
+07_WORD/WORD-V0.1.0/imagesVa/word_0001.nii.gz	07_WORD/WORD-V0.1.0/labelsVa/word_0001.nii.gz
+07_WORD/WORD-V0.1.0/imagesVa/word_0007.nii.gz	07_WORD/WORD-V0.1.0/labelsVa/word_0007.nii.gz

@@ -107,8 +107,8 @@ class SamLearner(LearnerModule):
         self.model.load_state_dict(state_dict)
         # self.lora_module.load_lora_parameters(pth.replace(".pth", "_lora.safetensors"))
 
-    def use_lora(self):        
-        lora_r = 8
+    def use_lora(self, r=8):        
+        lora_r = r
         lora_sam = LoRA_Sam(self.model, lora_r, freeze_prompt_encoder=True)
         self.lora_module = lora_sam
 

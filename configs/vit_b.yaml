@@ -25,7 +25,7 @@ training:
   load_pretrain_model: false
 
   # optim:
-  lr: 0.0002
+  lr: 0.000005
   decay_step: 2000
   decay_gamma: 0.8
   weight_decay: 0.0001
@@ -35,7 +35,7 @@ training:
 dataset:
   types: ['3d'] # ['3d', '2d']
   split: 'train'
-  data_root_path: '/quanquan/datasets/'
+  data_root_path: '/home1/quanquan/datasets/'
   dataset_list: ["alp", "word", "debug"] # ['sam', "their", "ours"]
   data_txt_path: './datasets/dataset_list/'
   dataset2d_path: "/home1/quanquan/datasets/08_AbdomenCT-1K/"
