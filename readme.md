@@ -1,4 +1,4 @@
-# Slide-SAM: Medical SAM meets sliding window (MIDL'24 Oral)
+# Slide-SAM: Medical SAM meets sliding window
 
 
 
