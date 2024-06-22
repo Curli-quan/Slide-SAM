@@ -202,7 +202,7 @@ EX_CONFIG = {
     }
 ```
 
-![inference](.\imgs\inference.gif)
+![inference](imgs\inference.gif)
 
 
 ## Citation
