@@ -4,8 +4,9 @@
 
 <p align="center" width="100%">
 <img src="imgs/training.png"  width="100%" height="60%">
+</span>
 </p>
-</br>
+
 ![image](https://github.com/Curli-quan/Slide-SAM/blob/main/imgs/inference.gif)
 
 <div align="center">
