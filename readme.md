@@ -1,4 +1,4 @@
-# Slide-SAM: Medical SAM meets sliding window
+# Slide-SAM: Medical SAM meets sliding window (MIDL'24 Oral)
 
 
 
@@ -202,10 +202,8 @@ EX_CONFIG = {
     }
 ```
 
+![inference](.\imgs\inference.gif)
 
-<p align="center" width="100%">
-<img src="imgs/inference.png"  width="100%" height="60%">
-</p>
 
 ## Citation
 
