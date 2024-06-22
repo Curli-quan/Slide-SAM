@@ -6,6 +6,7 @@
 <img src="imgs/training.png"  width="100%" height="60%">
 </p>
 
+![image](https://github.com/Curli-quan/Slide-SAM/blob/main/imgs/inference.gif)
 
 <div align="center">
     <span class="author-block">
