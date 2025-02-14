@@ -1,4 +1,4 @@
-# Slide-SAM: Medical SAM meets sliding window
+# [MIDL Best Oral Finalist] Slide-SAM: Medical SAM meets sliding window
 
 
 
